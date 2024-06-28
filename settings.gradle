@@ -1,0 +1,8 @@
+rootProject.name = 'Grable-dz'
+include 'db'
+include 'api'
+include 'db:src:main:service'
+findProject(':db:src:main:service')?.name = 'service'
+include 'service'
+
+
